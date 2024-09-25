@@ -1,0 +1,190 @@
+24-09-22 23:53:35.740 [main] INFO  n.e.journalApp.JournalApplication - Starting JournalApplication using Java 21.0.4 with PID 4044 (E:\journalApp (1)\journalApp\target\classes started by sadhn in E:\journalApp (1)\journalApp) 
+24-09-22 23:53:35.762 [main] INFO  n.e.journalApp.JournalApplication - The following 1 profile is active: "dev" 
+24-09-22 23:53:37.533 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode 
+24-09-22 23:53:37.535 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode. 
+24-09-22 23:53:37.741 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 198 ms. Found 3 MongoDB repository interfaces. 
+24-09-22 23:53:37.782 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode 
+24-09-22 23:53:37.784 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+24-09-22 23:53:37.802 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface net.engineeringdigest.journalApp.repository.ConfigJournalAppRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+24-09-22 23:53:37.803 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface net.engineeringdigest.journalApp.repository.JournalEntryRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+24-09-22 23:53:37.804 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface net.engineeringdigest.journalApp.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+24-09-22 23:53:37.804 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces. 
+24-09-22 23:53:38.844 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+24-09-22 23:53:38.859 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+24-09-22 23:53:38.864 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+24-09-22 23:53:38.865 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.28] 
+24-09-22 23:53:38.987 [main] INFO  o.a.c.c.C.[.[localhost].[/journal] - Initializing Spring embedded WebApplicationContext 
+24-09-22 23:53:38.989 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2990 ms 
+24-09-22 23:53:39.423 [cluster-ClusterId{value='66f060ab9720085f1ebb452f', description='Cluster0'}-srv-cluster0.7td9e.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server cluster0-shard-00-00.7td9e.mongodb.net:27017 to client view of cluster 
+24-09-22 23:53:39.467 [main] INFO  org.mongodb.driver.client - MongoClient with metadata {"application": {"name": "Cluster0"}, "driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.0.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.4+8-LTS-274"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='sadhnamall1010', source='admin', password=<hidden>, mechanismProperties=<hidden>}, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@1c3b6963, com.mongodb.Jep395RecordCodecProvider@7364f68, com.mongodb.KotlinCodecProvider@55a0f011]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=cluster0.7td9e.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-fue10u-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='Cluster0', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null} 
+24-09-22 23:53:39.480 [cluster-ClusterId{value='66f060ab9720085f1ebb452f', description='Cluster0'}-srv-cluster0.7td9e.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server cluster0-shard-00-01.7td9e.mongodb.net:27017 to client view of cluster 
+24-09-22 23:53:39.496 [cluster-ClusterId{value='66f060ab9720085f1ebb452f', description='Cluster0'}-srv-cluster0.7td9e.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server cluster0-shard-00-02.7td9e.mongodb.net:27017 to client view of cluster 
+24-09-22 23:53:40.021 [main] INFO  org.mongodb.driver.cluster - Waiting for server to become available for operation with ID 7. Remaining time: 30000 ms. Selector: WritableServerSelector, topology description: {type=REPLICA_SET, servers=[{address=cluster0-shard-00-00.7td9e.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, {address=cluster0-shard-00-01.7td9e.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, {address=cluster0-shard-00-02.7td9e.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}]. 
+24-09-22 23:53:40.289 [cluster-ClusterId{value='66f060ab9720085f1ebb452f', description='Cluster0'}-cluster0-shard-00-00.7td9e.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-00.7td9e.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=487936400, setName='atlas-fue10u-shard-0', canonicalAddress=cluster0-shard-00-00.7td9e.mongodb.net:27017, hosts=[cluster0-shard-00-02.7td9e.mongodb.net:27017, cluster0-shard-00-00.7td9e.mongodb.net:27017, cluster0-shard-00-01.7td9e.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-01.7td9e.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az1'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=1, topologyVersion=TopologyVersion{processId=66eabd5f18daf9223b13aeb7, counter=4}, lastWriteDate=Sun Sep 22 23:53:40 IST 2024, lastUpdateTimeNanos=4645350137400} 
+24-09-22 23:53:40.293 [cluster-ClusterId{value='66f060ab9720085f1ebb452f', description='Cluster0'}-cluster0-shard-00-01.7td9e.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-01.7td9e.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=488047900, setName='atlas-fue10u-shard-0', canonicalAddress=cluster0-shard-00-01.7td9e.mongodb.net:27017, hosts=[cluster0-shard-00-02.7td9e.mongodb.net:27017, cluster0-shard-00-00.7td9e.mongodb.net:27017, cluster0-shard-00-01.7td9e.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-01.7td9e.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az3'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000002e, setVersion=1, topologyVersion=TopologyVersion{processId=66eabeb99868c43c49386e31, counter=6}, lastWriteDate=Sun Sep 22 23:53:40 IST 2024, lastUpdateTimeNanos=4645350309600} 
+24-09-22 23:53:40.293 [cluster-ClusterId{value='66f060ab9720085f1ebb452f', description='Cluster0'}-cluster0-shard-00-02.7td9e.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-02.7td9e.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=487893500, setName='atlas-fue10u-shard-0', canonicalAddress=cluster0-shard-00-02.7td9e.mongodb.net:27017, hosts=[cluster0-shard-00-02.7td9e.mongodb.net:27017, cluster0-shard-00-00.7td9e.mongodb.net:27017, cluster0-shard-00-01.7td9e.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-01.7td9e.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az2'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=1, topologyVersion=TopologyVersion{processId=66eac0184d000f95870cb239, counter=3}, lastWriteDate=Sun Sep 22 23:53:40 IST 2024, lastUpdateTimeNanos=4645350137400} 
+24-09-22 23:53:40.297 [cluster-ClusterId{value='66f060ab9720085f1ebb452f', description='Cluster0'}-cluster0-shard-00-01.7td9e.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary cluster0-shard-00-01.7td9e.mongodb.net:27017 with max election id 7fffffff000000000000002e and max set version 1 
+24-09-22 23:53:41.649 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. 
+24-09-22 23:53:42.639 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+24-09-22 23:53:42.670 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/journal' 
+24-09-22 23:53:42.765 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-weekly-sentiment-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = weekly-sentiment-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = PLAIN
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+ 
+24-09-22 23:53:42.919 [main] INFO  o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector 
+24-09-22 23:53:43.115 [main] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed 
+24-09-22 23:53:43.116 [main] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter 
+24-09-22 23:53:43.118 [main] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter 
+24-09-22 23:53:43.119 [main] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed 
+24-09-22 23:53:43.122 [main] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-weekly-sentiment-group-1 unregistered 
+24-09-22 23:53:43.128 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"] 
+24-09-22 23:53:43.150 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'org.springframework.kafka.config.internalKafkaListenerEndpointRegistry' 
+24-09-22 23:53:43.305 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled. 
+24-09-22 23:53:43.339 [main] ERROR o.s.boot.SpringApplication - Application run failed 
+org.springframework.context.ApplicationContextException: Failed to start bean 'org.springframework.kafka.config.internalKafkaListenerEndpointRegistry'
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:288)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:469)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:257)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:202)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:990)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:628)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at net.engineeringdigest.journalApp.JournalApplication.main(JournalApplication.java:19)
+Caused by: org.apache.kafka.common.KafkaException: Failed to construct kafka consumer
+	at org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer.<init>(LegacyKafkaConsumer.java:264)
+	at org.apache.kafka.clients.consumer.internals.ConsumerDelegateCreator.create(ConsumerDelegateCreator.java:65)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.<init>(KafkaConsumer.java:600)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.<init>(KafkaConsumer.java:595)
+	at org.springframework.kafka.core.DefaultKafkaConsumerFactory$ExtendedKafkaConsumer.<init>(DefaultKafkaConsumerFactory.java:506)
+	at org.springframework.kafka.core.DefaultKafkaConsumerFactory.createRawConsumer(DefaultKafkaConsumerFactory.java:485)
+	at org.springframework.kafka.core.DefaultKafkaConsumerFactory.createKafkaConsumer(DefaultKafkaConsumerFactory.java:462)
+	at org.springframework.kafka.core.DefaultKafkaConsumerFactory.createConsumerWithAdjustedProperties(DefaultKafkaConsumerFactory.java:439)
+	at org.springframework.kafka.core.DefaultKafkaConsumerFactory.createKafkaConsumer(DefaultKafkaConsumerFactory.java:406)
+	at org.springframework.kafka.core.DefaultKafkaConsumerFactory.createConsumer(DefaultKafkaConsumerFactory.java:367)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.<init>(KafkaMessageListenerContainer.java:866)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer.doStart(KafkaMessageListenerContainer.java:379)
+	at org.springframework.kafka.listener.AbstractMessageListenerContainer.start(AbstractMessageListenerContainer.java:519)
+	at org.springframework.kafka.listener.ConcurrentMessageListenerContainer.doStart(ConcurrentMessageListenerContainer.java:255)
+	at org.springframework.kafka.listener.AbstractMessageListenerContainer.start(AbstractMessageListenerContainer.java:519)
+	at org.springframework.kafka.config.KafkaListenerEndpointRegistry.startIfNecessary(KafkaListenerEndpointRegistry.java:436)
+	at org.springframework.kafka.config.KafkaListenerEndpointRegistry.start(KafkaListenerEndpointRegistry.java:382)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:285)
+	... 13 common frames omitted
+Caused by: org.apache.kafka.common.KafkaException: Failed to create new NetworkClient
+	at org.apache.kafka.clients.ClientUtils.createNetworkClient(ClientUtils.java:252)
+	at org.apache.kafka.clients.ClientUtils.createNetworkClient(ClientUtils.java:162)
+	at org.apache.kafka.clients.consumer.internals.ConsumerUtils.createConsumerNetworkClient(ConsumerUtils.java:86)
+	at org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer.<init>(LegacyKafkaConsumer.java:191)
+	... 30 common frames omitted
+Caused by: java.lang.IllegalArgumentException: JAAS config entry not terminated by semi-colon
+	at org.apache.kafka.common.security.JaasConfig.parseAppConfigurationEntry(JaasConfig.java:121)
+	at org.apache.kafka.common.security.JaasConfig.<init>(JaasConfig.java:63)
+	at org.apache.kafka.common.security.JaasContext.load(JaasContext.java:93)
+	at org.apache.kafka.common.security.JaasContext.loadClientContext(JaasContext.java:87)
+	at org.apache.kafka.common.network.ChannelBuilders.create(ChannelBuilders.java:167)
+	at org.apache.kafka.common.network.ChannelBuilders.clientChannelBuilder(ChannelBuilders.java:81)
+	at org.apache.kafka.clients.ClientUtils.createChannelBuilder(ClientUtils.java:119)
+	at org.apache.kafka.clients.ClientUtils.createNetworkClient(ClientUtils.java:223)
+	... 33 common frames omitted
